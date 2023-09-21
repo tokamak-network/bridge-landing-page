@@ -3,7 +3,6 @@
 import { Flex, Link, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
 import "@fontsource/open-sans/700.css";
-// import '@fontsource/open-sans/500.css';
 import { useState, useEffect } from "react";
 import dayjs from "dayjs";
 import topArrow from "@/assets/top_arrow_icon.png";
@@ -188,7 +187,7 @@ const Footer = () => {
                 <Flex
                   fontWeight={"bold"}
                   fontFamily={"Open Sans, sans-serif"}
-                  color={"#1c1c1c"}
+                  color={"#FFFFFF"}
                   fontSize={"20px"}
                 >
                   {info.title}
@@ -201,7 +200,7 @@ const Footer = () => {
                       style={{ textDecoration: "none" }}
                       fontFamily={"Open Sans, sans-serif"}
                       key={index}
-                      color={"#4c4c4c"}
+                      color={"#FFFFFF7F"}
                       fontWeight={600}
                       fontSize={"14px"}
                       mb="4px"
@@ -258,12 +257,12 @@ const Footer = () => {
         {mobileView ? (
           <Text color={"#999999"} fontSize={"13px"}>
             Copyright © {dayjs().year()}{" "}
-            <span style={{ color: "#1c1c1c" }}>Tokamak Network</span>
+            <span style={{ color: "#FFFFFF7F" }}>Tokamak Network</span>
           </Text>
         ) : (
           <Text color={"#999999"}>
             Copyright © {dayjs().year()}{" "}
-            <span style={{ color: "#1c1c1c" }}>Tokamak Network</span> All Rights
+            <span style={{ color: "#FFFFFF7F" }}>Tokamak Network</span> All Rights
             Reserved.
           </Text>
         )}
