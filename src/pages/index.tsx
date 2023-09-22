@@ -71,7 +71,7 @@ export default function Home() {
             Exchanges
           </Text>
 
-          <Text textAlign={"center"} maxW={850} mx={'auto'} mt={100} fontSize={18} fontWeight={400} lineHeight={'200%'}>
+          <Text w={1000} mx={'auto'} pl={190} mt={100} fontSize={18} fontWeight={400} lineHeight={'200%'}>
             Tokamak Bridge is a unified Dapp that supports both Swap and Bridge
             functionality. With it’s fun card game-like interface, fast
             transaction speeds and reward-full ecosystem, Tokamak Bridge is an

@@ -262,10 +262,13 @@ const Footer = () => {
         ) : (
           <Text color={"#999999"}>
             Copyright © {dayjs().year()}{" "}
-            <span style={{ color: "#FFFFFF7F" }}>Tokamak Network</span> All Rights
+            <span style={{ color: "#FFFFFF" }}>Tokamak Network</span> All Rights
             Reserved.
           </Text>
         )}
+
+        <Link color={"#FFFFFF7F"}>Privacy Policy</Link>
+        <Link color={"#FFFFFF7F"}>Terms & Conditions</Link>
 
         <Flex onClick={scrollToTop} _hover={{ cursor: "pointer" }}>
           <Image src={topArrow} alt="arrow" height={40} width={30} />
