@@ -33,7 +33,7 @@ const Footer = () => {
         },
         {
           text: "Partners",
-          Link: "https://renewal-homepage.vercel.app/#partners",
+          Link: "https://tokamak.network/#partners",
         },
       ],
     },
@@ -51,11 +51,11 @@ const Footer = () => {
       subTitles: [
         {
           text: "TokamakOPTIMISM",
-          Link: "https://renewal-homepage.vercel.app/#layer2",
+          Link: "https://tokamak.network/#layer2",
         },
         {
           text: "TokamakzkEVM",
-          Link: "https://renewal-homepage.vercel.app/#layer2",
+          Link: "https://tokamak.network/#layer2",
         },
       ],
     },

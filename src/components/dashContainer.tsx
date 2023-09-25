@@ -11,13 +11,12 @@ const DashContainer = ({ children, title, mr }: PropsType) => {
 
   return (
     <Flex
+      bgImage={"/assets/dash-border.svg"}
       pos={"relative"}
       rounded={"20px"}
-      borderWidth={2}
-      borderColor={"#FFFFFF7F"}
       p={"60px"}
-      borderStyle={"dashed"}
       w={"fit-content"}
+      h={"fit-content"}
       gap={20}
       mr={mr}
     >

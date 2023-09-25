@@ -49,29 +49,31 @@ export default function Home() {
           bgRepeat={"no-repeat"}
           minH={"100vh"}
           >
-          <Text textAlign={"center"} fontSize={72} fontWeight={700}>
+          <Text fontFamily={"sans-serif"} textAlign={"center"} fontSize={72} fontWeight={700}>
             UNIFIED SOLUTION{" "}
           </Text>
           <Text
+            fontFamily={"sans-serif"}
             textAlign={"center"}
             fontSize={72}
             fontWeight={700}
-            ml={"-160px"}
+            ml={"-190px"}
             lineHeight={'115%'}
           >
             for MULTI-NETWORK{" "}
           </Text>
           <Text
+            fontFamily={"sans-serif"}
             textAlign={"center"}
             fontSize={72}
             fontWeight={700}
             ml={"-230px"}
             lineHeight={'115%'}
           >
-            Exchanges
+            EXCHANGES
           </Text>
 
-          <Text w={1000} mx={'auto'} pl={190} mt={100} fontSize={18} fontWeight={400} lineHeight={'200%'}>
+          <Text w={1000} mx={'auto'} pl={160} mt={100} fontSize={18} fontWeight={400} lineHeight={'200%'}>
             Tokamak Bridge is a unified Dapp that supports both Swap and Bridge
             functionality. With it’s fun card game-like interface, fast
             transaction speeds and reward-full ecosystem, Tokamak Bridge is an
@@ -129,7 +131,7 @@ export default function Home() {
             <Text textAlign={'center'} fontSize={32} fontWeight={700} lineHeight={'48px'}>SUPPORTED TOKENS</Text>
 
             <Wrap mt={20} spacing={10} justify={"center"}>
-              <DashContainer title="Tokamka Network Ecosystem">
+              <DashContainer title="Tokamak Network Ecosystem">
                 <Image alt="eth" src={ETH}/>
                 <Image alt="weth" src={WETH}/>
                 <Image alt="ton" src={TON}/>
