@@ -2,7 +2,7 @@
 
 import { Flex, Link, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
-import "@fontsource/open-sans/700.css";
+import "@fontsource/open-sans/600.css";
 import { useState, useEffect } from "react";
 import dayjs from "dayjs";
 import topArrow from "@/assets/top_arrow_icon.png";
@@ -25,7 +25,7 @@ const Footer = () => {
       subTitles: [
         {
           text: "Team",
-          Link: "https://tokamak.network/#/about",
+          Link: "https://tokamak.network/about",
         },
         {
           text: "Careers",
