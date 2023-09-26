@@ -5,8 +5,7 @@ const DataProvider = () => {
     <Flex
       justifyContent={"space-between"}
       mx={"auto"}
-      mt={180}
-      mb={230}
+      mt={200}
       gap={100}
     >
       <Box>

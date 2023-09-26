@@ -10,6 +10,7 @@ const Headline = () => {
         textAlign={"center"}
         fontSize={72}
         fontWeight={700}
+        ml={"-30px"}
       >
         UNIFIED SOLUTION{" "}
       </Text>
@@ -17,7 +18,7 @@ const Headline = () => {
         textAlign={"center"}
         fontSize={72}
         fontWeight={700}
-        ml={"-190px"}
+        ml={"-180px"}
         lineHeight={"115%"}
       >
         for MULTI-NETWORK{" "}
@@ -26,7 +27,7 @@ const Headline = () => {
         textAlign={"center"}
         fontSize={72}
         fontWeight={700}
-        ml={"-230px"}
+        ml={"-240px"}
         lineHeight={"145%"}
       >
         EXCHANGES

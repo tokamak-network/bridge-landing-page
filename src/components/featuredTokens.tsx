@@ -15,7 +15,7 @@ import LYDA from "@/assets/symbols/lyda.svg"
 
 const FeturedTokens = () => {
   return (
-    <Box my={300} px={"100px"}>
+    <Box mt={268} mb={256} px={"100px"}>
       <Text
         textAlign={"center"}
         fontSize={32}
@@ -45,7 +45,7 @@ const FeturedTokens = () => {
           <Image alt="lyda" src={LYDA} />
         </DashContainer>
 
-        <DashContainer title="Supported Networks">
+        <DashContainer title="Supported Networks" description="*More networks coming soon">
           <Image alt="tos" src={TOS} />
           <Image alt="doc" src={DOC} />
         </DashContainer>

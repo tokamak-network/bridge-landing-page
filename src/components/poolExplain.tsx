@@ -6,11 +6,23 @@ import Claim from "@/assets/claim.png"
 import UNISWAP from "@/assets/uniswap.svg"
 import ARROWTOPRIGHT from "@/assets/top-right-arrow.svg"
 
+import "@fontsource/inter/300.css"
+
 const PoolExplain = () => {
   const theme = useTheme();
 
   return (
-    <Flex justify={"center"} gap={10}>
+    <Flex pos={"relative"} mt={335} justify={"center"} gap={10} mx={"auto"}>
+      <Text
+        top={-100}
+        left={0}
+        pos={"absolute"}
+        fontFamily={theme.fonts.poppins}
+        fontWeight={700}
+        fontSize={32}
+      >
+        POOLS
+      </Text>
       <Stack
         border={"2px"}
         pt={10}
@@ -23,7 +35,7 @@ const PoolExplain = () => {
           mb={9}
           fontFamily={theme.fonts.inter}
           fontSize={18}
-          fontWeight={600}
+          fontWeight={500}
           lineHeight={"30px"}
         >
           Analyze your pools position across multiple networks.
@@ -45,7 +57,7 @@ const PoolExplain = () => {
             mb={2}
             fontFamily={theme.fonts.inter}
             fontSize={18}
-            fontWeight={600}
+            fontWeight={500}
             lineHeight={"30px"}
           >
             Provide liquidity and earn income
@@ -80,7 +92,7 @@ const PoolExplain = () => {
             <Text
               fontFamily={theme.fonts.inter}
               fontSize={18}
-              fontWeight={600}
+              fontWeight={500}
               lineHeight={"30px"}
             >
               Based on Uniswap V3

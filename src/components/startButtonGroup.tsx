@@ -2,7 +2,7 @@ import { Box, Button, Flex, Text } from "@chakra-ui/react";
 
 const StartButtonGroup = () => {
   return (
-    <Box mt={"148px"} mb={208}>
+    <Box my={144}>
       <Text fontSize={32} fontWeight={700} align={"center"}>
         GET STARTED
       </Text>

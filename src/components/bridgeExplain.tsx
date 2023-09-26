@@ -21,11 +21,10 @@ const BridgeExplain = () => {
           <Text
             fontFamily={theme.fonts.inter}
             fontSize={18}
-            fontWeight={600}
+            fontWeight={500}
             lineHeight={"30px"}
           >
-            View a thorough breakdown of the withdrawal process and enable
-            calendar notifications for timely claiming alerts.
+            An informative withdrawal process with google calendar integration.
           </Text>
 
           <Image alt="confirm modal" src={ConfirmModal}></Image>
@@ -42,11 +41,10 @@ const BridgeExplain = () => {
           <Text
             fontFamily={theme.fonts.inter}
             fontSize={18}
-            fontWeight={600}
+            fontWeight={500}
             lineHeight={"30px"}
           >
-            Access a holistic view of your interactions with the bridge through
-            our Bridge History tab.
+            Bridge History Tab provides a holistic view of all of your interactions.
           </Text>
 
           <Image alt="transaction history" src={TransactionHistory} />

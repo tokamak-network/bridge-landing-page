@@ -4,7 +4,7 @@ import { Box, Stack, Text, useTheme } from "@chakra-ui/react";
 import Headline from "@/components/headline";
 
 import DataProvider from "@/components/dataProvider";
-import TokenCards from "@/components/TokenCards";
+import TokenCards from "@/components/tokenCards";
 import BridgeExplain from "@/components/bridgeExplain";
 import FeaturedTokens from "@/components/featuredTokens";
 import PoolExplain from "@/components/poolExplain";
@@ -24,7 +24,7 @@ export default function Home() {
 
       <Box color={"white"}>
         <Stack
-          pt={"220px"}
+          pt={"190px"}
           fontFamily={theme.fonts.poppins}
           zIndex={100}
           color={"white"}
@@ -33,22 +33,28 @@ export default function Home() {
           bgRepeat={"no-repeat"}
           minH={"100vh"}
         >
-          <Headline/>
+          <Headline />
 
-          <Text w={1000} mx={'auto'} pl={160} mt={100} fontSize={18} fontWeight={400} lineHeight={'200%'}>
-            Tokamak Bridge is a unified Dapp that supports both Swap and Bridge
-            functionality. With it’s fun card game-like interface, fast
-            transaction speeds and reward-full ecosystem, Tokamak Bridge is an
-            all-in-one solution for cryptocurrency enthusiasts.
+          <Text
+            w={1000}
+            mx={"auto"}
+            pl={160}
+            mt={122}
+            fontSize={18}
+            fontWeight={400}
+            lineHeight={"200%"}
+          >
+            With it’s fun card game-like interface, fast transaction speeds and
+            reward-full ecosystem, crypto enthusiasts will enjoy an all-in-one
+            solution for Bridge and Swap functionality.
           </Text>
 
-          <DataProvider/>
-          <TokenCards/>
-          <BridgeExplain/>
-          <FeaturedTokens/>
-          <PoolExplain/>
-          <StartButtonGroup/>
-
+          <DataProvider />
+          <FeaturedTokens />
+          <TokenCards />
+          <BridgeExplain />
+          <PoolExplain />
+          <StartButtonGroup />
         </Stack>
       </Box>
     </>
