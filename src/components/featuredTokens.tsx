@@ -22,7 +22,7 @@ const FeturedTokens = () => {
         fontWeight={700}
         lineHeight={"48px"}
       >
-        FEATURED TOKENS
+        FEATURED TOKENS/NETWORKS
       </Text>
 
       <Wrap mt={20} spacing={10} justify={"center"}>
@@ -38,11 +38,16 @@ const FeturedTokens = () => {
           <Image alt="usdt" src={USDT} />
         </DashContainer>
 
-        <DashContainer title="TONStarter Ecosystem" mr="424px">
+        <DashContainer title="TONStarter Ecosystem">
           <Image alt="tos" src={TOS} />
           <Image alt="doc" src={DOC} />
           <Image alt="aura" src={AURA} />
           <Image alt="lyda" src={LYDA} />
+        </DashContainer>
+
+        <DashContainer title="Supported Networks">
+          <Image alt="tos" src={TOS} />
+          <Image alt="doc" src={DOC} />
         </DashContainer>
       </Wrap>
     </Box>

@@ -116,10 +116,10 @@ const Footer = () => {
           text: "Twitter",
           Link: "https://twitter.com/tokamak_network",
         },
-        {
-          text: "KakaoTalk (KR)",
-          Link: "https://open.kakao.com/o/g2zlglHd",
-        },
+        // {
+        //   text: "KakaoTalk (KR)",
+        //   Link: "https://open.kakao.com/o/g2zlglHd",
+        // },
         {
           text: "Discord (EN)",
           Link: "https://discord.com/invite/J4chV2zuAK",
