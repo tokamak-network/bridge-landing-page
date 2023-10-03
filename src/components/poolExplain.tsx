@@ -24,6 +24,7 @@ const PoolExplain = () => {
         POOLS
       </Text>
       <Stack
+        w={616}
         border={"2px"}
         pt={10}
         borderColor={"#23242A"}
@@ -41,10 +42,10 @@ const PoolExplain = () => {
           Analyze your pools position across multiple networks.
         </Text>
 
-        <Image alt="pool" src={Pools}></Image>
+        <Image style={{ height: "100%" }} alt="pool" src={Pools}></Image>
       </Stack>
 
-      <VStack>
+      <VStack rowGap={"42px"}>
         <Stack
           border={"2px"}
           p={10}
