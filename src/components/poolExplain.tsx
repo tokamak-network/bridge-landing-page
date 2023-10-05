@@ -33,7 +33,7 @@ const PoolExplain = () => {
       >
         <Text
           ml={12}
-          mb={9}
+          mb={14}
           fontFamily={theme.fonts.inter}
           fontSize={18}
           fontWeight={500}
@@ -42,7 +42,7 @@ const PoolExplain = () => {
           Analyze your pools position across multiple networks.
         </Text>
 
-        <Image style={{ height: "100%" }} alt="pool" src={Pools}></Image>
+        <Image alt="pool" src={Pools}></Image>
       </Stack>
 
       <VStack rowGap={"42px"}>
