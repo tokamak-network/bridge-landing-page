@@ -88,7 +88,7 @@ const PoolExplain = () => {
           maxW={"512px"}
           flexGrow={1}
         >
-          <Flex align={"center"} gap={4}>
+          <Flex align={"center"} gap={4}> 
             <Image alt="uniswap" src={UNISWAP} />
             <Text
               fontFamily={theme.fonts.inter}

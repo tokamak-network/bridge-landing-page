@@ -36,11 +36,12 @@ export default function Home() {
           <Headline />
 
           <Text
-            w={1000}
+            w={["full", 1000, 1000]}
             mx={"auto"}
-            pl={160}
-            mt={122}
-            fontSize={18}
+            pl={[35, 160, 160]}
+            pr={[35, 0, 0]}
+            mt={{base: 94, sm: 94, md:122}}
+            fontSize={[16, 18, 18]}
             fontWeight={400}
             lineHeight={"200%"}
           >

@@ -3,9 +3,10 @@ import { Flex, Box, Text } from "@chakra-ui/react";
 const DataProvider = () => {
   return (
     <Flex
-      justifyContent={"space-between"}
+      justifyContent={["center", "space-between"]}
+      flexWrap={"wrap"}
       mx={"auto"}
-      mt={200}
+      mt={{base:140, sm:200, md:200}}
       gap={100}
     >
       <Box>

@@ -23,9 +23,9 @@ const styles = {
 const theme = extendTheme({
   fonts,
   breakpoints: {
-    sm: "799px",
-    md: "1199px",
-    lg: "1900px",
+    base: "0px",
+    sm: "640px",
+    md: "1200px",
   },
   styles
 });

@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Flex
       justifyContent={"space-between"}
-      px={310}
+      px={{base:"20px", sm: "20px", md:310}}
       w={'100%'}
       h={20}
       bg={"#0000007F"}
@@ -24,7 +24,7 @@ const Header = () => {
         alignItems={"center"}
       >
         <Image alt="bridge logo" src={BridgeLogo} />
-        <Text fontFamily={"Open Sans, sans-serif"} color={"white"}>
+        <Text display={{base:"none", sm:"block"}} fontFamily={"Open Sans, sans-serif"} color={"white"}>
           Tokamak Bridge
         </Text>
       </HStack>

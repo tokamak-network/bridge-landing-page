@@ -7,27 +7,27 @@ const Headline = () => {
   return (
     <Box fontFamily={theme.fonts.poppins}>
       <Text
-        textAlign={"center"}
-        fontSize={72}
+        textAlign={{base: "left", sm:"center", md:"center"}}
+        fontSize={{base:30, sm: 44, md: 72}}
         fontWeight={700}
-        ml={"-30px"}
+        ml={{base:70, sm: "10px", md: -30}}
       >
         UNIFIED SOLUTION{" "}
       </Text>
       <Text
-        textAlign={"center"}
-        fontSize={72}
+        textAlign={{base: "left", sm:"center", md:"center"}}
+        fontSize={{base:30, sm: 44, md: 72}}
         fontWeight={700}
-        ml={"-180px"}
+        ml={{base:"20px", sm: -92, md: -180}}
         lineHeight={"115%"}
       >
         for MULTI-NETWORK{" "}
       </Text>
       <Text
-        textAlign={"center"}
-        fontSize={72}
+        textAlign={{base: "left", sm:"center", md:"center"}}
+        fontSize={{base:30, sm: 44, md: 72}}
         fontWeight={700}
-        ml={"-240px"}
+        ml={{base:70, sm: -132, md: -240}}
         lineHeight={"145%"}
       >
         EXCHANGES

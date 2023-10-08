@@ -1,5 +1,6 @@
 import {  Flex, Text, useTheme } from "@chakra-ui/react";
 import "@fontsource/poppins/300.css"
+import { wrap } from "module";
 
 interface PropsType {
   children: React.ReactNode;
@@ -14,12 +15,14 @@ const DashContainer = ({ children, title, mr, description }: PropsType) => {
   return (
     <Flex
       bgImage={"/assets/dash-border.svg"}
+      flexWrap={"wrap"}
       pos={"relative"}
       rounded={"20px"}
-      p={"60px"}
-      w={"fit-content"}
+      p={{base: "60px 40px", sm:"60px", md:"60px"}}
+      w={{base:"full", sm:"fit-content", md:"fit-content"}}
       h={"fit-content"}
-      gap={20}
+      gap={{base:"50px", sm:"50px", md:20}}
+      justifyContent={"center"}
       mr={mr}
     >
       <Text
@@ -36,6 +39,7 @@ const DashContainer = ({ children, title, mr, description }: PropsType) => {
 
       {description &&
       <Text
+        display={{base:"none", sm:"block"}}
         fontFamily={theme.fonts.poppins}
         fontSize={14}
         fontWeight={300}

@@ -1,6 +1,7 @@
-import { Box, Text, Wrap } from "@chakra-ui/react";
+import { Box, Text, Wrap, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import DashContainer from "./dashContainer";
+import useMediaView from "@/hooks/useMediaView";
 
 import ETH from "@/assets/symbols/eth.svg"
 import WETH from "@/assets/symbols/weth.svg"
@@ -12,10 +13,14 @@ import TOS from "@/assets/symbols/tos.svg"
 import DOC from "@/assets/symbols/doc.svg"
 import AURA from "@/assets/symbols/aura.svg"
 import LYDA from "@/assets/symbols/lyda.svg"
+import ETH2 from "@/assets/symbols/eth2.svg"
+import TITAN from "@/assets/symbols/titan.svg"
 
 const FeturedTokens = () => {
+  const { mobileView } = useMediaView();
+
   return (
-    <Box mt={268} mb={256} px={"100px"}>
+    <Box mt={268} mb={256} px={{base:"16px", sm:"100px", md:100}}>
       <Text
         textAlign={"center"}
         fontSize={32}
@@ -33,10 +38,12 @@ const FeturedTokens = () => {
           <Image alt="wton" src={WTON} />
         </DashContainer>
 
+        {!mobileView && 
         <DashContainer title="Stable Assets">
           <Image alt="usdc" src={USDC} />
           <Image alt="usdt" src={USDT} />
         </DashContainer>
+        }
 
         <DashContainer title="TONStarter Ecosystem">
           <Image alt="tos" src={TOS} />
@@ -45,9 +52,16 @@ const FeturedTokens = () => {
           <Image alt="lyda" src={LYDA} />
         </DashContainer>
 
+        {mobileView && 
+        <DashContainer title="Stable Assets">
+          <Image alt="usdc" src={USDC} />
+          <Image alt="usdt" src={USDT} />
+        </DashContainer>
+        }
+
         <DashContainer title="Supported Networks" description="*More networks coming soon">
-          <Image alt="tos" src={TOS} />
-          <Image alt="doc" src={DOC} />
+          <Image alt="tos" src={ETH2} />
+          <Image alt="doc" src={TITAN} />
         </DashContainer>
       </Wrap>
     </Box>
