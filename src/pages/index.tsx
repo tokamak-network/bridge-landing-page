@@ -24,13 +24,15 @@ export default function Home() {
 
       <Box color={"white"}>
         <Stack
-          pt={"190px"}
+          mt={{base:"120px", sm:0}}
+          pt={{base:"0px", sm:"150px"}}
           fontFamily={theme.fonts.poppins}
           zIndex={100}
           color={"white"}
           bgImage="url('/assets/background.png')"
           bgPos={"top"}
           bgRepeat={"no-repeat"}
+          bgSize={"contain"}
           minH={"100vh"}
         >
           <Headline />

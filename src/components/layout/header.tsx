@@ -9,10 +9,10 @@ const Header = () => {
       justifyContent={"space-between"}
       px={{base:"20px", sm: "20px", md:310}}
       w={'100%'}
-      h={20}
-      bg={"#0000007F"}
+      h={"80px"}
+      bg={{base:"#17181D00", sm:"#0000007F"}}
       alignItems={"center"}
-      pos={'absolute'}
+      pos={'absolute'} 
       top={0}
       left={0}
     >

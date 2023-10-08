@@ -2,12 +2,12 @@ import { Box, Button, Flex, Text } from "@chakra-ui/react";
 
 const StartButtonGroup = () => {
   return (
-    <Box my={144}>
+    <Box my={{base:"80px", sm:"144px"}} px={"30px"}>
       <Text fontSize={32} fontWeight={700} align={"center"}>
         GET STARTED
       </Text>
 
-      <Flex justify={"center"} mt={9} gap={30}>
+      <Flex flexDir={{base:"column", sm:"row"}} justify={"center"} mt={9} gap={30}>
         <Button
           h={12}
           colorScheme="blue"

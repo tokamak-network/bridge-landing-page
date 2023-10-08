@@ -1,4 +1,4 @@
-import { Box, Flex, Stack, Text, useTheme } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
 
 import ConfirmModal from "@/assets/confirm_modal.png"
@@ -8,15 +8,16 @@ const BridgeExplain = () => {
   const theme = useTheme();
 
   return (
-    <Box>
-      <Flex gap={42} mx={"auto"} justifyContent={"center"}>
-        <Stack
+    <Box px={"15px"}>
+      <Grid w={{base:"full", md:974}} templateColumns='repeat(2, 1fr)' gap={42} mx={"auto"} justifyContent={"center"}>
+        <GridItem
+          colSpan={{base:2, sm:1}}
           border={"2px"}
-          p={10}
+          p={{base:"40px 30px", sm:"40px"}}
           borderColor={"#23242A"}
           rounded={"20px"}
           bgColor={"#1F2128"}
-          w={488}
+          w={{base:"full", md:488}}
         >
           <Text
             fontFamily={theme.fonts.inter}
@@ -28,15 +29,16 @@ const BridgeExplain = () => {
           </Text>
 
           <Image alt="confirm modal" src={ConfirmModal}></Image>
-        </Stack>
+        </GridItem>
 
-        <Stack
+        <GridItem
+          colSpan={{base:2, sm:1}}
           border={"2px"}
-          p={10}
+          p={{base:"40px 30px", sm:"40px"}}
           borderColor={"#23242A"}
           rounded={"20px"}
           bgColor={"#1F2128"}
-          w={444}
+          w={{base:"full", md:444}}
         >
           <Text
             fontFamily={theme.fonts.inter}
@@ -48,8 +50,8 @@ const BridgeExplain = () => {
           </Text>
 
           <Image alt="transaction history" src={TransactionHistory} />
-        </Stack>
-      </Flex>
+        </GridItem>
+      </Grid>
     </Box>
   );
 };
