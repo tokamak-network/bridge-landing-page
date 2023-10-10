@@ -24,6 +24,7 @@ const BridgeExplain = () => {
             fontSize={18}
             fontWeight={500}
             lineHeight={"30px"}
+            mb={{base:10, sm:9}}
           >
             An informative withdrawal process with google calendar integration.
           </Text>
@@ -43,8 +44,9 @@ const BridgeExplain = () => {
           <Text
             fontFamily={theme.fonts.inter}
             fontSize={18}
-            fontWeight={500}
+            fontWeight={{base:600, sm:500}}
             lineHeight={"30px"}
+            mb={{base:10, sm:9}}
           >
             Bridge History Tab provides a holistic view of all of your interactions.
           </Text>

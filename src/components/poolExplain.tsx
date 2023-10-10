@@ -36,6 +36,8 @@ const PoolExplain = () => {
           POOLS
         </Text>
         <GridItem
+          display={"flex"}
+          flexDir={"column"}
           colSpan={{base:2, sm:1}}
           w={{base:"full", md:616}}
           border={"2px"}
@@ -46,7 +48,7 @@ const PoolExplain = () => {
         >
           <Text
             ml={12}
-            mb={14}
+            mb={9}
             fontFamily={theme.fonts.inter}
             fontSize={18}
             fontWeight={500}
@@ -55,7 +57,7 @@ const PoolExplain = () => {
             Analyze your pools position across multiple networks.
           </Text>
 
-          <Image alt="pool" src={Pools}></Image>
+          <Image style={{flexGrow:"1"}} alt="pool" src={Pools}></Image>
         </GridItem>
 
         <GridItem colSpan={{base:2, sm:1}}>
@@ -95,7 +97,7 @@ const PoolExplain = () => {
 
             <Stack
               border={"2px"}
-              p={10}
+              p={"42px"}
               borderColor={"#23242A"}
               rounded={"20px"}
               bgColor={"#1F2128"}
@@ -116,7 +118,7 @@ const PoolExplain = () => {
               </Flex>
 
               <Text
-                mt={6}
+                mt={4}
                 fontFamily={theme.fonts.inter}
                 fontSize={14}
                 fontWeight={300}

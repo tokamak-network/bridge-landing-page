@@ -29,10 +29,10 @@ export default function Home() {
           fontFamily={theme.fonts.poppins}
           zIndex={100}
           color={"white"}
-          bgImage="url('/assets/background.png')"
+          bgImage={{base:"url('/assets/mobilebackground.png')", sm:"url('/assets/background.png')"}}
           bgPos={"top"}
           bgRepeat={"no-repeat"}
-          bgSize={"contain"}
+          bgSize={"auto"}
           minH={"100vh"}
         >
           <Headline />
@@ -42,7 +42,7 @@ export default function Home() {
             mx={"auto"}
             pl={[35, 160, 160]}
             pr={[35, 0, 0]}
-            mt={{base: 94, sm: 94, md:122}}
+            mt={{base: "80px", sm: "80px", md:122}}
             fontSize={[16, 18, 18]}
             fontWeight={400}
             lineHeight={"200%"}
