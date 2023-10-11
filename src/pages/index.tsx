@@ -1,7 +1,5 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import { Box, Stack, Text, useTheme } from "@chakra-ui/react";
-import Image from "next/image";
 import Headline from "@/components/headline";
 
 import DataProvider from "@/components/dataProvider";
@@ -10,9 +8,6 @@ import BridgeExplain from "@/components/bridgeExplain";
 import FeaturedTokens from "@/components/featuredTokens";
 import PoolExplain from "@/components/poolExplain";
 import StartButtonGroup from "@/components/startButtonGroup";
-
-import Background from "@/assets/background.png";
-import MobileBG from "@/assets/mobilebackground.png";
 
 export default function Home() {
   const theme = useTheme();

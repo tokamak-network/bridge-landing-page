@@ -20,7 +20,7 @@ const FeturedTokens = () => {
   const { mobileView } = useMediaView();
 
   return (
-    <Box mt={{base:"120px", sm:268}} mb={{base:"80px", sm:"256px"}} px={{base:"16px", sm:"100px", md:100}}>
+    <Box mt={{base:"120px", sm:268}} mb={{base:"80px", sm:"256px"}} px={{base:"16px"}}>
       <Text
         textAlign={"center"}
         fontSize={32}
