@@ -1,7 +1,9 @@
 import { Box, Grid, GridItem, Flex, Stack, VStack, Text, useTheme} from "@chakra-ui/react";
 import Image from "next/image";
+import useMediaView from "@/hooks/useMediaView";
 
 import Pools from "@/assets/pools.png"
+import Pools2 from "@/assets/pools_mobile.png"
 import Claim from "@/assets/claim.png"
 import UNISWAP from "@/assets/uniswap.svg"
 import ARROWTOPRIGHT from "@/assets/top-right-arrow.svg"
@@ -10,6 +12,7 @@ import "@fontsource/inter/300.css"
 
 const PoolExplain = () => {
   const theme = useTheme();
+  const { mobileView } = useMediaView();
 
   return (
     <Box mx="15px" mt={{base:"80px", md:"335px"}}>
@@ -47,8 +50,8 @@ const PoolExplain = () => {
           bgColor={"#1F2128"}
         >
           <Text
-            ml={12}
-            mb={9}
+            mx={{base:"30px", sm:"42px"}}
+            mb={{base:"40px", sm:"30px"}}
             fontFamily={theme.fonts.inter}
             fontSize={18}
             fontWeight={500}
@@ -57,14 +60,14 @@ const PoolExplain = () => {
             Analyze your pools position across multiple networks.
           </Text>
 
-          <Image style={{flexGrow:"1"}} alt="pool" src={Pools}></Image>
+          <Image style={{flexGrow:"1", width:"100%"}} alt="pool" src={mobileView ? Pools2 : Pools}></Image>
         </GridItem>
 
         <GridItem colSpan={{base:2, sm:1}}>
           <Flex flexDir={'column'} rowGap={"42px"}>
             <Stack
               border={"2px"}
-              p={10}
+              p={{base:"40px 30px", sm:"42px"}}
               borderColor={"#23242A"}
               rounded={"20px"}
               bgColor={"#1F2128"}
@@ -81,7 +84,7 @@ const PoolExplain = () => {
               </Text>
 
               <Text
-                mb={2}
+                mb={2} 
                 fontFamily={theme.fonts.inter}
                 fontSize={14}
                 fontWeight={300}

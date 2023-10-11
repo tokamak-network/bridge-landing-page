@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import { Box, Stack, Text, useTheme } from "@chakra-ui/react";
+import Image from "next/image";
 import Headline from "@/components/headline";
 
 import DataProvider from "@/components/dataProvider";
@@ -9,6 +10,9 @@ import BridgeExplain from "@/components/bridgeExplain";
 import FeaturedTokens from "@/components/featuredTokens";
 import PoolExplain from "@/components/poolExplain";
 import StartButtonGroup from "@/components/startButtonGroup";
+
+import Background from "@/assets/background.png";
+import MobileBG from "@/assets/mobilebackground.png";
 
 export default function Home() {
   const theme = useTheme();
@@ -24,25 +28,40 @@ export default function Home() {
 
       <Box color={"white"}>
         <Stack
-          mt={{base:"120px", sm:0}}
-          pt={{base:"0px", sm:"150px"}}
+          mt={{ base: "120px", sm: 0 }}
+          pt={{ base: "0px", sm: "150px" }}
           fontFamily={theme.fonts.poppins}
           zIndex={100}
           color={"white"}
-          bgImage={{base:"url('/assets/mobilebackground.png')", sm:"url('/assets/background.png')"}}
+          bgImage={{
+            base: "url('/assets/mobilebackground.png')",
+            sm: "url('/assets/background.png')",
+          }}
           bgPos={"top"}
           bgRepeat={"no-repeat"}
           bgSize={"auto"}
           minH={"100vh"}
+          pos={"relative"}
         >
           <Headline />
+
+          <Box
+            display={{base:"block", sm:"none"}}
+            top={"70px"}
+            zIndex={-1}
+            pos={"absolute"}
+            style={{backdropFilter: "blur(2px)"}}
+            w={"full"}
+            h={"350px"}
+            bgGradient="linear(to-b, #17181D00, #17181DFF)"
+          ></Box>
 
           <Text
             w={["full", 1000, 1000]}
             mx={"auto"}
             pl={[35, 160, 160]}
             pr={[35, 0, 0]}
-            mt={{base: "80px", sm: "80px", md:122}}
+            mt={{ base: "80px", sm: "80px", md: 122 }}
             fontSize={[16, 18, 18]}
             fontWeight={400}
             lineHeight={"200%"}

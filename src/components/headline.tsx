@@ -10,7 +10,7 @@ const Headline = () => {
         textAlign={{base: "left", sm:"center", md:"center"}}
         fontSize={{base:30, sm: 44, md: 72}}
         fontWeight={700}
-        ml={{base:70, sm: "10px", md: -30}}
+        ml={{base:70, sm: "0px", md: -30}}
       >
         UNIFIED SOLUTION{" "}
       </Text>

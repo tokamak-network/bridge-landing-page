@@ -20,12 +20,12 @@ const TokenCards = () => {
       </Text>
       <Box
         pos={"relative"}
-        mb={130}
+        mb={{base:"80px", sm:"130px"}}
         w={{base:"full", md:974}}
         h={{base:200, sm:300}}
         mx={"auto"}
         border={"2px"}
-        p={{base:"40px 30px", md:"40px"}}
+        p={{base:"40px 30px", sm:"42px"}}
         borderColor={"#23242A"}
         rounded={"20px"}
         bgColor={"#1F2128"}

@@ -10,7 +10,7 @@ const Header = () => {
       px={{base:"20px", sm: "20px", md:310}}
       w={'100%'}
       h={"80px"}
-      bg={{base:"#17181D", sm:"#0000007F"}}
+      bg={{base:"#17181D7F", sm:"#0000007F"}}
       alignItems={"center"}
       pos={'absolute'} 
       top={0}
