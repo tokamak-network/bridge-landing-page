@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Button, Text } from "@chakra-ui/react";
 
 const StartButtonGroup = () => {
   return (
@@ -7,14 +7,15 @@ const StartButtonGroup = () => {
         GET STARTED
       </Text>
 
-      <Flex flexDir={{base:"column", sm:"row"}} justify={"center"} mt={9} gap={30}>
+      <Flex flexDir={{base:"column", sm:"row"}} justify={"center"} mt={"38px"} gap={"30px"}>
         <Button
           h={12}
-          colorScheme="blue"
+          colorScheme="blue" 
           bg={"#007AFF"}
           px={8}
           fontWeight={500}
           fontSize={18}
+          onClick={() => window.open("https://bridge.tokamak.network", '_blank')}
         >
           Launch App
         </Button>
@@ -29,6 +30,7 @@ const StartButtonGroup = () => {
           fontWeight={500}
           fontSize={18}
           color={"white"}
+          onClick={() => window.open("https://tokamaknetwork.gitbook.io/home/02-service-guide/tokamak-bridge", '_blank')}
         >
           User Guides
         </Button>

@@ -1,6 +1,5 @@
 import {  Flex, Text, useTheme } from "@chakra-ui/react";
 import "@fontsource/poppins/300.css"
-import { wrap } from "module";
 
 interface PropsType {
   children: React.ReactNode;
@@ -39,7 +38,6 @@ const DashContainer = ({ children, title, mr, description }: PropsType) => {
 
       {description &&
       <Text
-        display={{base:"none", sm:"block"}}
         fontFamily={theme.fonts.poppins}
         fontSize={14}
         fontWeight={300}
