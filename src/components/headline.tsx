@@ -27,7 +27,7 @@ const Headline = () => {
         textAlign={{base: "left", sm:"center", md:"center"}}
         fontSize={{base:30, sm: 44, md: 72}}
         fontWeight={700}
-        ml={{base:70, sm: -132, md: -240}}
+        ml={{base:69, sm: -132, md: -240}}
         lineHeight={"145%"}
       >
         EXCHANGES

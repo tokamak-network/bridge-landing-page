@@ -20,7 +20,7 @@ const TokenCards = () => {
       </Text>
       <Box
         pos={"relative"}
-        mb={{base:"80px", sm:"130px"}}
+        mb={{base:"120px", sm:"130px"}}
         w={{base:"full", md:974}}
         h={{base:200, sm:300}}
         mx={"auto"}

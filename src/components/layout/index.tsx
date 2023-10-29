@@ -1,6 +1,5 @@
 import Header from "./header";
 import Footer from "./footer";
-import { usePathname } from 'next/navigation';
 import { Flex } from "@chakra-ui/react";
 
 interface PropsType {
@@ -10,12 +9,10 @@ interface PropsType {
 const Layout = ({
     children
 }: PropsType) => {
-    const pathname = usePathname()
-    
     return (
         <Flex flexDirection={'column'} bg={'#17181D'}>
             <Header/>
-            <main>{children}</main>
+            <main style={{zIndex: "0"}}>{children}</main>
             <Footer/>
         </Flex>
     )

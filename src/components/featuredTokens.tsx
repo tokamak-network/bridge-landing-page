@@ -44,7 +44,9 @@ const FeturedTokens = () => {
           <Image alt="usdt" src={USDT} />
         </DashContainer>
         }
+      </Wrap>
 
+      <Wrap mt={20} spacing={10} justify={"center"}>
         <DashContainer title="TONStarter Ecosystem">
           <Image alt="tos" src={TOS} />
           <Image alt="doc" src={DOC} />
