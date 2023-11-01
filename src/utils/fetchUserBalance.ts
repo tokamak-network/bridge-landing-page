@@ -171,8 +171,10 @@ export function useFetchBalance() {
     const fetchBalances = async () => {
       const balances = await getBalances();
       let sum;
-      for (let item of balances!) {
-        sum += item.balanceInUSD;
+      if (balances) {
+        for (let item of balances!) {
+          sum += item.balanceInUSD;
+        }
       }
       return setTotalBalance(sum);
       // return setMarketList(balances);
