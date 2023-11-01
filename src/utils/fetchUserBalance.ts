@@ -30,6 +30,7 @@ export function useFetchBalance() {
     process.env.NEXT_PUBLIC_ETHEREUM_RPC
   );
   const [marketList, setMarketList] = useState<any[] | undefined>([]);
+  const [totalBalance, setTotalBalance] = useState<any>();
   const balanceCheck = new ethers.Contract(
     BalanceCheckerContract,
     BalanceChecker,
@@ -169,7 +170,12 @@ export function useFetchBalance() {
   useEffect(() => {
     const fetchBalances = async () => {
       const balances = await getBalances();
-      return setMarketList(balances);
+      let sum;
+      for (let item of balances!) {
+        sum += item.balanceInUSD;
+      }
+      return setTotalBalance(sum);
+      // return setMarketList(balances);
     };
 
     fetchBalances().catch((e) => {
@@ -178,5 +184,5 @@ export function useFetchBalance() {
     });
   }, [data]);
 
-  return marketList;
+  return totalBalance;
 }
