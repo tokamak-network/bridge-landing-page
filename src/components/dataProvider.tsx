@@ -1,21 +1,27 @@
 import { Flex, Box, Text } from "@chakra-ui/react";
 import { useFetchBalance } from "@/utils/fetchUserBalance";
+import { abbrNum } from "@/utils/shortenNumber";
 
 const DataProvider = () => {
   const price = useFetchBalance();
   console.log(price);
-  
+
   return (
     <Flex
       justifyContent={["center", "space-between"]}
       flexWrap={"wrap"}
       mx={"auto"}
-      mt={{base:140, sm:200, md:200}}
+      mt={{ base: 140, sm: 200, md: 200 }}
       gap={100}
     >
-      <Box>
-        <Text fontSize={56} fontWeight={600} as={"i"}>
-          $412.7M+
+      <Flex direction="column" align={"center"}>
+        <Text
+          fontSize={56}
+          fontWeight={600}
+          as={"i"}
+          textAlign={"center"}
+        >
+          {"$" + abbrNum(price, 1) + "+"}
         </Text>
         <Text
           fontSize={18}
@@ -23,10 +29,10 @@ const DataProvider = () => {
           color={"#FFFFFF7F"}
           textAlign={"center"}
         >
-          TRADE VOLUME
+          LOCKED DEPOSIT ON TOKAMAK BRIDGE
         </Text>
-      </Box>
-      <Box>
+      </Flex>
+      {/* <Box>
         <Text fontSize={56} fontWeight={600} as={"i"}>
           $28.2M+
         </Text>
@@ -64,7 +70,7 @@ const DataProvider = () => {
         >
           TRANSACTIONS
         </Text>
-      </Box>
+      </Box> */}
     </Flex>
   );
 };

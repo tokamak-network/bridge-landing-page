@@ -170,12 +170,10 @@ export function useFetchBalance() {
   useEffect(() => {
     const fetchBalances = async () => {
       const balances = await getBalances();
-      let sum;
-      if (balances) {
-        for (let item of balances!) {
-          sum += item.balanceInUSD;
-        }
-      }
+      let sum=0;
+      balances?.map((item) => {
+        sum += Number(item.balanceInUSD);
+      })
       return setTotalBalance(sum);
       // return setMarketList(balances);
     };
@@ -184,7 +182,7 @@ export function useFetchBalance() {
       console.log("**fetchBalances err**");
       console.log(e);
     });
-  }, [data]);
+  }, [data, dataID]);
 
   return totalBalance;
 }
