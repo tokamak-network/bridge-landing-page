@@ -1,6 +1,10 @@
 import { Flex, Box, Text } from "@chakra-ui/react";
+import { useFetchBalance } from "@/utils/fetchUserBalance";
 
 const DataProvider = () => {
+  const price = useFetchBalance();
+  console.log(price);
+  
   return (
     <Flex
       justifyContent={["center", "space-between"]}
