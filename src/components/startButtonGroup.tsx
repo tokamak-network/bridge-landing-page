@@ -17,7 +17,7 @@ const StartButtonGroup = () => {
           fontSize={18}
           onClick={() => window.open("https://bridge.tokamak.network", '_blank')}
         >
-          Launch App
+          Enter App
         </Button>
 
         <Button

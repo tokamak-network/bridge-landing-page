@@ -8,6 +8,7 @@ const Header = () => {
     <Flex
       justifyContent={"space-between"}
       px={{ base: "20px", sm: "20px", md: 310 }}
+      mt={{ base: "40px", sm: "46px" }}
       w={"100%"}
       h={"80px"}
       bg={{ base: "#17181D7F", sm: "#0000007F" }}
@@ -45,7 +46,7 @@ const Header = () => {
         fontSize={18}
         cursor={"pointer"}
       >
-        Launch App
+        Enter App
       </Button>
     </Flex>
   );
