@@ -1,6 +1,7 @@
 import { Flex, Box, Text } from "@chakra-ui/react";
 import { useFetchBalance } from "@/utils/fetchUserBalance";
 import { abbrNum } from "@/utils/shortenNumber";
+import GradientSpinner from "./ui/gradientSpinner";
 
 const DataProvider = () => {
   const price = useFetchBalance();
@@ -15,6 +16,7 @@ const DataProvider = () => {
       gap={100}
     >
       <Flex direction="column" align={"center"}>
+        {price ? 
         <Text
           fontSize={56}
           fontWeight={600}
@@ -22,7 +24,12 @@ const DataProvider = () => {
           textAlign={"center"}
         >
           {"$" + abbrNum(price, 1) + "+"}
-        </Text>
+        </Text> :
+
+        <Box width={200} h={"80px"}>
+          <GradientSpinner/>
+        </Box>
+        }
         <Text
           fontSize={18}
           fontWeight={400}

@@ -53,8 +53,8 @@ const TokenCards = () => {
           depositing and withdrawing funds.
         </Text>
 
-        <Box pos={"absolute"} top={{base: 150, sm:100}} pr={30}>
-          <Image alt="trading cards" src={Cards} style={{ margin: "auto" }} />
+        <Box width={{base: "calc(100% - 40px)", sm: "calc(100% - 60px)"}} pos={"absolute"} top={{base: 150, xs:100}} pr={{base: 30, xs:"40px"}}>
+          <Image alt="trading cards" src={Cards} style={{ margin: "auto"}} />
         </Box>
       </Box>
     </Box>
