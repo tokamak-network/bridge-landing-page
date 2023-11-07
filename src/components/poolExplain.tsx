@@ -90,7 +90,7 @@ const PoolExplain = () => {
               borderColor={"#23242A"}
               rounded={"20px"}
               bgColor={"#1F2128"}
-              maxW={"512px"}
+              maxW={{base: "800px", sm:"512px"}}
             >
               <Text
                 mb={2}
@@ -123,7 +123,7 @@ const PoolExplain = () => {
               borderColor={"#23242A"}
               rounded={"20px"}
               bgColor={"#1F2128"}
-              maxW={"512px"}
+              maxW={{base: "800px", sm:"512px"}}
               flexGrow={1}
             >
               <Flex

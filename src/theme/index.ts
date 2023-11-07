@@ -25,7 +25,7 @@ const theme = extendTheme({
   breakpoints: {
     base: "0px",
     xs: "530px",
-    sm: "700px",
+    sm: "799px",
     md: "1200px",
   },
   styles

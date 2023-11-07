@@ -26,7 +26,7 @@ const DataProvider = () => {
           {"$" + abbrNum(price, 1) + "+"}
         </Text> :
 
-        <Box width={200} h={"80px"}>
+        <Box width={200} h={"84px"}>
           <GradientSpinner/>
         </Box>
         }

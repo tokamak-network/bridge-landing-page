@@ -158,21 +158,21 @@ const Footer = () => {
       <Flex
         zIndex={100}
         justifyContent={"space-between"}
-        w={["100%", "100%", "100%", "100%", "1200px", "1200px"]}
+        w={["100%", "100%", "1200px", "1200px"]}
         flexDir={"column"}
         flexWrap={"wrap"}
         alignItems={"center"}
-        mt={["20px", "20px", "0px", "0px", "0px", "0px"]}
+        mt={["20px", "20px", "0px", "0px"]}
       >
         <Flex
           w={"100%"}
           flexDir={"row"}
           flexWrap={"wrap"}
           justifyContent={"space-between"}
-          height={["540px", "540px", "179px", "179px", "179px", "179px"]}
-          mb={["30px", "30px", "60px", "60px", "60px", "60px"]}
-          pr={["20px", "20px", "30px", "30px", "0px", "0px"]}
-          pl={["40px", "40px", "30px", "30px", "0px", "0px"]}
+          height={{base: "540px", sm:"179px"}}
+          mb={["30px", "30px", "60px", "60px"]}
+          pr={["20px", "30px", "0px", "0px"]}
+          pl={["40px", "40px", "30px", "0px"]}
         >
           {data.map((info: any, index: number) => {
             return (
@@ -251,8 +251,8 @@ const Footer = () => {
         justifyContent={"space-between"}
         h={mobileView ? "120px" : "112px"}
         alignItems={"center"}
-        px={["20px", "20px", "30px", "30px", "0px", "0px"]}
-        w={["100%", "100%", "100%", "100%", "1200px", "1200px"]}
+        px={["20px", "30px", "0px", "0px"]}
+        w={["100%", "100%", "1200px", "1200px"]}
       >
         {mobileView ? (
           <Text color={"#999999"} fontSize={"13px"}>
@@ -267,8 +267,8 @@ const Footer = () => {
           </Text>
         )}
 
-        <Link color={"#FFFFFF7F"}>Privacy Policy</Link>
-        <Link color={"#FFFFFF7F"}>Terms & Conditions</Link>
+        {/* <Link color={"#FFFFFF7F"}>Privacy Policy</Link>
+        <Link color={"#FFFFFF7F"}>Terms & Conditions</Link> */}
 
         <Flex onClick={scrollToTop} _hover={{ cursor: "pointer" }}>
           <Image src={topArrow} alt="arrow" height={40} width={30} />
