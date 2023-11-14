@@ -8,6 +8,7 @@ import BridgeExplain from "@/components/bridgeExplain";
 import FeaturedTokens from "@/components/featuredTokens";
 import PoolExplain from "@/components/poolExplain";
 import StartButtonGroup from "@/components/startButtonGroup";
+import SwapExplain from "@/components/swapExplain";
 
 export default function Home() {
   const theme = useTheme();
@@ -66,9 +67,10 @@ export default function Home() {
             solution for Bridge and Swap functionality.
           </Text>
 
-          <DataProvider />
+          {/* <DataProvider /> */}
           <FeaturedTokens />
           <TokenCards />
+          <SwapExplain />
           <BridgeExplain />
           <PoolExplain />
           <StartButtonGroup />

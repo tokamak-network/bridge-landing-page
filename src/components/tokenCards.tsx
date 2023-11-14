@@ -7,7 +7,7 @@ const TokenCards = () => {
   const theme = useTheme();
 
   return (
-    <Box px={15}>
+    <Box px={"15px"}>
       <Text
         display={{base:"block", md:"none"}}
         fontFamily={theme.fonts.poppins}
@@ -16,7 +16,7 @@ const TokenCards = () => {
         textAlign={"center"}
         mb={"80px"}
       >
-        BRIDGE
+        BRIDGE / SWAP
       </Text>
       <Box
         pos={"relative"}
@@ -39,7 +39,7 @@ const TokenCards = () => {
           fontWeight={700}
           fontSize={32}
         >
-          BRIDGE
+          BRIDGE / SWAP
         </Text>
         <Text
           fontFamily={theme.fonts.inter}
