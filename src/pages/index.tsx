@@ -67,7 +67,7 @@ export default function Home() {
             solution for Bridge and Swap functionality.
           </Text>
 
-          {/* <DataProvider /> */}
+          <DataProvider />
           <FeaturedTokens />
           <TokenCards />
           <SwapExplain />
