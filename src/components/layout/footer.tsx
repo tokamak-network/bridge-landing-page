@@ -113,8 +113,8 @@ const Footer = () => {
           Link: "https://medium.com/onther-tech",
         },
         {
-          text: "Twitter",
-          Link: "https://twitter.com/tokamak_network",
+          text: "X",
+          Link: "https://x.com/tokamak_network",
         },
         // {
         //   text: "KakaoTalk (KR)",

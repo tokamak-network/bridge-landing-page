@@ -1,7 +1,7 @@
 import { Box, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
 
-import Cards from "@/assets/tradingcards.png";
+import Cards from "@/assets/tradingcards.svg";
 
 const TokenCards = () => {
   const theme = useTheme();

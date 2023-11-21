@@ -1,11 +1,14 @@
 import { Box, Grid, GridItem, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
+import useMediaView from "@/hooks/useMediaView";
 
 import ConfirmModal from "@/assets/confirm_modal.png"
+import ConfirmModalLarge from "@/assets/confirm_modal_lg.png"
 import TransactionHistory from "@/assets/txHistory.png"
 
 const BridgeExplain = () => {
   const theme = useTheme();
+  const {mobileView} = useMediaView();
 
   return (
     <Box px={"15px"}>
@@ -29,7 +32,7 @@ const BridgeExplain = () => {
             An informative withdrawal process with google calendar integration.
           </Text>
 
-          <Image alt="confirm modal" src={ConfirmModal}></Image>
+          <Image alt="confirm modal" src={mobileView ? ConfirmModal : ConfirmModalLarge }></Image>
         </GridItem>
 
         <GridItem
