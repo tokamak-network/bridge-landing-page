@@ -145,14 +145,10 @@ export function useFetchBalance() {
           };
         });
 
-        // console.log('tokensWithId',tokensWithId);
-        
         //call the fetchMarketPrice function for all the tokens in the tokensWithId array
         const marketPricedList = await Promise.all(
           tokensWithId.map(async (token: any) => {
             const marketprice = await fetchMarketPrice(token.id);
-            // console.log('marketprice',token.id,marketprice);
-            
             const balanceInUSD = token.balance * marketprice;
 
             return {
@@ -179,8 +175,6 @@ export function useFetchBalance() {
     };
 
     fetchBalances().catch((e) => {
-      console.log("**fetchBalances err**");
-      console.log(e);
     });
   }, [data, dataID]);
 

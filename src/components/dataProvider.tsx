@@ -5,7 +5,6 @@ import GradientSpinner from "./ui/gradientSpinner";
 
 const DataProvider = () => {
   const price = useFetchBalance();
-  console.log(price);
 
   return (
     <Flex
