@@ -80,7 +80,7 @@ export default function Home() {
           <TokenCards />
           <SwapExplain />
           <BridgeExplain />
-          <PoolExplain />
+          {/* <PoolExplain /> */}
           <StartButtonGroup />
         </Stack>
       </Box>
