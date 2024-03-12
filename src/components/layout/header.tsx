@@ -1,9 +1,11 @@
-import { Flex, HStack, Button, Text } from "@chakra-ui/react";
+import { Flex, HStack, Button, Text, useTheme } from "@chakra-ui/react";
 import "@fontsource/poppins";
 import BridgeLogo from "../../assets/bridge_logo.svg";
 import Image from "next/image";
 
 const Header = () => {
+  const theme = useTheme();
+
   return (
     <Flex
       justifyContent={"space-between"}
@@ -28,7 +30,7 @@ const Header = () => {
         <Image alt="bridge logo" src={BridgeLogo} />
         <Text
           display={{ base: "none", sm: "block" }}
-          fontFamily={"Open Sans, sans-serif"}
+          fontFamily={theme.fonts.poppins}
           color={"white"}
         >
           Tokamak Bridge
