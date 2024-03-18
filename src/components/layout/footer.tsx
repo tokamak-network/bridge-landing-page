@@ -2,8 +2,7 @@
 
 import { Flex, Link, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
-import "@fontsource/open-sans/700.css";
-// import '@fontsource/open-sans/500.css';
+import "@fontsource/open-sans/600.css";
 import { useState, useEffect } from "react";
 import dayjs from "dayjs";
 import topArrow from "@/assets/top_arrow_icon.png";
@@ -26,7 +25,7 @@ const Footer = () => {
       subTitles: [
         {
           text: "Team",
-          Link: "https://tokamak.network/#/about",
+          Link: "https://tokamak.network/about",
         },
         {
           text: "Careers",
@@ -34,7 +33,7 @@ const Footer = () => {
         },
         {
           text: "Partners",
-          Link: "https://renewal-homepage.vercel.app/#partners",
+          Link: "https://tokamak.network/#partners",
         },
       ],
     },
@@ -52,11 +51,11 @@ const Footer = () => {
       subTitles: [
         {
           text: "TokamakOPTIMISM",
-          Link: "https://renewal-homepage.vercel.app/#layer2",
+          Link: "https://tokamak.network/#layer2",
         },
         {
           text: "TokamakzkEVM",
-          Link: "https://renewal-homepage.vercel.app/#layer2",
+          Link: "https://tokamak.network/#layer2",
         },
       ],
     },
@@ -114,13 +113,13 @@ const Footer = () => {
           Link: "https://medium.com/onther-tech",
         },
         {
-          text: "Twitter",
-          Link: "https://twitter.com/tokamak_network",
+          text: "X",
+          Link: "https://x.com/tokamak_network",
         },
-        {
-          text: "KakaoTalk (KR)",
-          Link: "https://open.kakao.com/o/g2zlglHd",
-        },
+        // {
+        //   text: "KakaoTalk (KR)",
+        //   Link: "https://open.kakao.com/o/g2zlglHd",
+        // },
         {
           text: "Discord (EN)",
           Link: "https://discord.com/invite/J4chV2zuAK",
@@ -159,21 +158,21 @@ const Footer = () => {
       <Flex
         zIndex={100}
         justifyContent={"space-between"}
-        w={["100%", "100%", "100%", "100%", "1200px", "1200px"]}
+        w={["100%", "100%", "1200px", "1200px"]}
         flexDir={"column"}
         flexWrap={"wrap"}
         alignItems={"center"}
-        mt={["20px", "20px", "0px", "0px", "0px", "0px"]}
+        mt={["20px", "20px", "0px", "0px"]}
       >
         <Flex
           w={"100%"}
           flexDir={"row"}
           flexWrap={"wrap"}
           justifyContent={"space-between"}
-          height={["540px", "540px", "179px", "179px", "179px", "179px"]}
-          mb={["30px", "30px", "60px", "60px", "60px", "60px"]}
-          pr={["20px", "20px", "30px", "30px", "0px", "0px"]}
-          pl={["40px", "40px", "30px", "30px", "0px", "0px"]}
+          height={{base: "540px", sm:"179px"}}
+          mb={["30px", "30px", "60px", "60px"]}
+          pr={["20px", "30px", "0px", "0px"]}
+          pl={["40px", "40px", "30px", "0px"]}
         >
           {data.map((info: any, index: number) => {
             return (
@@ -188,7 +187,7 @@ const Footer = () => {
                 <Flex
                   fontWeight={"bold"}
                   fontFamily={"Open Sans, sans-serif"}
-                  color={"#1c1c1c"}
+                  color={"#FFFFFF"}
                   fontSize={"20px"}
                 >
                   {info.title}
@@ -201,7 +200,7 @@ const Footer = () => {
                       style={{ textDecoration: "none" }}
                       fontFamily={"Open Sans, sans-serif"}
                       key={index}
-                      color={"#4c4c4c"}
+                      color={"#FFFFFF7F"}
                       fontWeight={600}
                       fontSize={"14px"}
                       mb="4px"
@@ -252,21 +251,24 @@ const Footer = () => {
         justifyContent={"space-between"}
         h={mobileView ? "120px" : "112px"}
         alignItems={"center"}
-        px={["20px", "20px", "30px", "30px", "0px", "0px"]}
-        w={["100%", "100%", "100%", "100%", "1200px", "1200px"]}
+        px={["20px", "30px", "0px", "0px"]}
+        w={["100%", "100%", "1200px", "1200px"]}
       >
         {mobileView ? (
           <Text color={"#999999"} fontSize={"13px"}>
             Copyright © {dayjs().year()}{" "}
-            <span style={{ color: "#1c1c1c" }}>Tokamak Network</span>
+            <span style={{ color: "#FFFFFF7F" }}>Tokamak Network</span>
           </Text>
         ) : (
           <Text color={"#999999"}>
             Copyright © {dayjs().year()}{" "}
-            <span style={{ color: "#1c1c1c" }}>Tokamak Network</span> All Rights
+            <span style={{ color: "#FFFFFF" }}>Tokamak Network</span> All Rights
             Reserved.
           </Text>
         )}
+
+        {/* <Link color={"#FFFFFF7F"}>Privacy Policy</Link>
+        <Link color={"#FFFFFF7F"}>Terms & Conditions</Link> */}
 
         <Flex onClick={scrollToTop} _hover={{ cursor: "pointer" }}>
           <Image src={topArrow} alt="arrow" height={40} width={30} />
