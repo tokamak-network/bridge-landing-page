@@ -1,17 +1,14 @@
 import { Box, Flex, Button, Text } from "@chakra-ui/react";
 
-const StartButtonGroup = () => {
+const ButtonGroup = () => {
   return (
-    <Box my={{base:"80px", sm:"144px"}} px={"30px"}>
-      <Text fontSize={32} fontWeight={700} align={"center"}>
-        GET STARTED
-      </Text>
-
-      <Flex flexDir={{base:"column", sm:"row"}} justify={"center"} mt={"38px"} columnGap={"30px"} rowGap={"16px"}>
+    <Box px={"30px"}>
+      <Flex flexDir={{ base: "column", sm: "row" }} justify={"center"} align={"center"} mt={"45px"} columnGap={"30px"} rowGap={"16px"}>
         <Button
-          w={{base: "full", md: "148px"}}
+          display={{ base: "none", md: "block" }}
+          w={"148px"}
           h={"45px"}
-          colorScheme="blue" 
+          colorScheme="blue"
           bg={"#007AFF"}
           px={8}
           fontWeight={500}
@@ -22,7 +19,7 @@ const StartButtonGroup = () => {
         </Button>
 
         <Button
-          w={{base: "full", md: "148px"}}
+          w={"148px"}
           h={"45px"}
           colorScheme="blackAlpha"
           bg={"transparent"}
@@ -41,4 +38,4 @@ const StartButtonGroup = () => {
   );
 };
 
-export default StartButtonGroup;
+export default ButtonGroup;

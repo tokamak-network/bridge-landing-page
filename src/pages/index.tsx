@@ -9,6 +9,7 @@ import FeaturedTokens from "@/components/featuredTokens";
 import PoolExplain from "@/components/poolExplain";
 import StartButtonGroup from "@/components/startButtonGroup";
 import SwapExplain from "@/components/swapExplain";
+import ButtonGroup from "@/components/ButtonGroup";
 
 export default function Home() {
   const theme = useTheme();
@@ -33,7 +34,7 @@ export default function Home() {
       <Box color={"white"}>
         <Stack
           mt={{ base: "120px", sm: 0 }}
-          pt={{ base: "0px", sm: "150px" }}
+          pt={{ base: "0px", sm: "80px" }}
           fontFamily={theme.fonts.poppins}
           zIndex={100}
           color={"white"}
@@ -50,30 +51,33 @@ export default function Home() {
           <Headline />
 
           <Box
-            display={{base:"block", sm:"none"}}
+            display={{ base: "block", sm: "none" }}
             top={"70px"}
             zIndex={-1}
             pos={"absolute"}
-            style={{backdropFilter: "blur(2px)"}}
+            style={{ backdropFilter: "blur(2px)" }}
             w={"full"}
             h={"350px"}
             bgGradient="linear(to-b, #17181D00, #17181DFF)"
           ></Box>
 
           <Text
-            w={["full", 1000, 1000]}
+            w={["full", 820, 820]}
             mx={"auto"}
-            pl={[35, 160, 160]}
-            pr={[35, 0, 0]}
-            mt={{ base: "80px", sm: "80px", md: 122 }}
+            px={"20px"}
+            // pl={[35, 160, 160]}
+            // pr={[35, 0, 0]}
+            mt={10}
             fontSize={[16, 18, 18]}
             fontWeight={400}
             lineHeight={"200%"}
+            textAlign={"center"}
           >
             With it’s fun card game-like interface, fast transaction speeds and
             reward-full ecosystem, crypto enthusiasts will enjoy an all-in-one
             solution for Bridge and Swap functionality.
           </Text>
+          <ButtonGroup />
 
           <DataProvider />
           <FeaturedTokens />

@@ -11,13 +11,13 @@ const DataProvider = () => {
       justifyContent={["center", "space-between"]}
       flexWrap={"wrap"}
       mx={"auto"}
-      mt={{ base: 140, sm: 200, md: 200 }}
+      mt={120}
       gap={100}
     >
       <Flex direction="column" align={"center"}>
         {price ? 
         <Text
-          fontSize={56}
+          fontSize={42}
           fontWeight={600}
           as={"i"}
           textAlign={"center"}
@@ -30,7 +30,7 @@ const DataProvider = () => {
         </Box>
         }
         <Text
-          fontSize={18}
+          fontSize={15}
           fontWeight={400}
           color={"#FFFFFF7F"}
           textAlign={"center"}

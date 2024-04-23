@@ -1,20 +1,37 @@
-import { Box, Text, useTheme } from "@chakra-ui/react";
+import { Box, Flex, Text, useTheme } from "@chakra-ui/react";
 import "@fontsource/poppins/700.css"
 
 const Headline = () => {
   const theme = useTheme();
 
   return (
-    <Box fontFamily={theme.fonts.poppins}>
+    <Box fontFamily={theme.fonts.poppins} paddingTop={{base: "0px", md:"200px"}}>
       <Text
-        textAlign={{base: "left", sm:"center", md:"center"}}
-        fontSize={{base:30, sm: 44, md: 72}}
+        display={{base: "none", md: "block"}}
+        textAlign={"center"}
+        fontSize={72}
         fontWeight={700}
-        ml={{base:70, sm: "0px", md: -30}}
       >
-        UNIFIED SOLUTION{" "}
+        Unified L2 Bridge & Swap
       </Text>
-      <Text
+
+      <Flex display={{base: "flex", md: "none"}} flexDir={"column"}>
+        <Text
+          textAlign={"center"}
+          fontSize={{base:33, sm: 44, md: 72}}
+          fontWeight={700}
+        >
+          Unified L2
+        </Text>
+        <Text
+          textAlign={"center"}
+          fontSize={{base:33, sm: 44, md: 72}}
+          fontWeight={700}
+        >
+          Bridge & Swap
+        </Text>
+      </Flex>
+      {/* <Text
         textAlign={{base: "left", sm:"center", md:"center"}}
         fontSize={{base:30, sm: 44, md: 72}}
         fontWeight={700}
@@ -31,7 +48,7 @@ const Headline = () => {
         lineHeight={"145%"}
       >
         EXCHANGES
-      </Text>
+      </Text> */}
     </Box>
   );
 };
