@@ -41,8 +41,9 @@ const Header = () => {
       </HStack>
 
       <Button
+        w={"148px"}
         onClick={() => window.open("https://bridge.tokamak.network", "_blank")}
-        h={12}
+        h={"45px"}
         fontFamily={"Poppins"}
         colorScheme="blue"
         bg={"#007AFF"}

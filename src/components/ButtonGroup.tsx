@@ -6,7 +6,7 @@ const ButtonGroup = () => {
       <Flex flexDir={{ base: "column", sm: "row" }} justify={"center"} align={"center"} mt={"45px"} columnGap={"30px"} rowGap={"16px"}>
         <Button
           display={{ base: "none", md: "block" }}
-          w={"148px"}
+          w={"172px"}
           h={"45px"}
           colorScheme="blue"
           bg={"#007AFF"}
@@ -19,7 +19,7 @@ const ButtonGroup = () => {
         </Button>
 
         <Button
-          w={"148px"}
+          w={"163px"}
           h={"45px"}
           colorScheme="blackAlpha"
           bg={"transparent"}
