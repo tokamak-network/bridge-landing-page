@@ -62,7 +62,7 @@ export default function Home() {
           ></Box>
 
           <Text
-            w={["full", 820, 820]}
+            w={["full", 850, 850]}
             mx={"auto"}
             px={"20px"}
             // pl={[35, 160, 160]}
