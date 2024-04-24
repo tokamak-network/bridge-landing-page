@@ -93,7 +93,7 @@ export function useFetchBalance() {
       );
 
       //create an array with only token addresses to pass to the contract function
-      const tokenAddresses = uniqueTokensList.map((token: any) => {
+      const tokenAddresses = tokamakTokens.map((token: any) => {
         return token.address;
       });
 
@@ -111,12 +111,12 @@ export function useFetchBalance() {
               balance: Number(
                 ethers.utils.formatUnits(
                   balance,
-                  uniqueTokensList[index].decimals
+                  tokamakTokens[index].decimals
                 )
               ),
-              address: uniqueTokensList[index].address,
-              name: uniqueTokensList[index].name,
-              symbol: uniqueTokensList[index].symbol,
+              address: tokamakTokens[index].address,
+              name: tokamakTokens[index].name,
+              symbol: tokamakTokens[index].symbol,
             };
           }
         );
