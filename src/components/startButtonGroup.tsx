@@ -16,7 +16,7 @@ const StartButtonGroup = () => {
           px={8}
           fontWeight={500}
           fontSize={18}
-          onClick={() => window.open("https://bridge.tokamak.network", '_blank')}
+          onClick={() => window.open("https://app.bridge.tokamak.network", '_blank')}
         >
           Enter App
         </Button>
@@ -32,7 +32,7 @@ const StartButtonGroup = () => {
           fontWeight={500}
           fontSize={18}
           color={"white"}
-          onClick={() => window.open("https://tokamaknetwork.gitbook.io/home/02-service-guide/tokamak-bridge", '_blank')}
+          onClick={() => window.open("https://docs.tokamak.network/", '_blank')}
         >
           User Guide
         </Button>
