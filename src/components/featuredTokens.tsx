@@ -52,37 +52,37 @@ const FeturedTokens = () => {
         fontWeight={700}
         lineHeight={"48px"}
       >
-        FEATURED TOKENS / NETWORKS
+        FEATURED TOKENS & NETWORKS
       </Text>
 
       <Wrap mt={20} spacing={10} justify={"center"}>
         <DashContainer title="Tokamak Network Ecosystem">
-          <TokenSymbolItem icon={ETH} symbol="ETH"/>
-          <TokenSymbolItem icon={WETH} symbol="WETH"/>
-          <TokenSymbolItem icon={TON} symbol="TON"/>
-          <TokenSymbolItem icon={WTON} symbol="WTON"/>
+          <TokenSymbolItem icon={ETH} symbol="ETH" />
+          <TokenSymbolItem icon={WETH} symbol="WETH" />
+          <TokenSymbolItem icon={TON} symbol="TON" />
+          <TokenSymbolItem icon={WTON} symbol="WTON" />
         </DashContainer>
 
         {!mobileView && (
           <DashContainer title="Stable Assets">
-            <TokenSymbolItem icon={USDC} symbol="USDC"/>
-            <TokenSymbolItem icon={USDT} symbol="USDT"/>
+            <TokenSymbolItem icon={USDC} symbol="USDC" />
+            <TokenSymbolItem icon={USDT} symbol="USDT" />
           </DashContainer>
         )}
       </Wrap>
 
       <Wrap mt={20} spacing={10} justify={"center"}>
         <DashContainer title="TONStarter Ecosystem">
-          <TokenSymbolItem icon={TOS} symbol="TOS"/>
-          <TokenSymbolItem icon={DOC} symbol="DOC"/>
-          <TokenSymbolItem icon={AURA} symbol="AURA"/>
-          <TokenSymbolItem icon={LYDA} symbol="LYDA"/>
+          <TokenSymbolItem icon={TOS} symbol="TOS" />
+          <TokenSymbolItem icon={DOC} symbol="DOC" />
+          <TokenSymbolItem icon={AURA} symbol="AURA" />
+          <TokenSymbolItem icon={LYDA} symbol="LYDA" />
         </DashContainer>
 
         {mobileView && (
           <DashContainer title="Stable Assets">
-            <TokenSymbolItem icon={USDC} symbol="USDC"/>
-            <TokenSymbolItem icon={USDT} symbol="USDT"/>
+            <TokenSymbolItem icon={USDC} symbol="USDC" />
+            <TokenSymbolItem icon={USDT} symbol="USDT" />
           </DashContainer>
         )}
 
@@ -90,8 +90,8 @@ const FeturedTokens = () => {
           title="Supported Networks"
           description="*More networks coming soon"
         >
-          <TokenSymbolItem icon={ETH2} symbol="ETHEREUM"/>
-          <TokenSymbolItem icon={TITAN} symbol="TITAN"/>
+          <TokenSymbolItem icon={ETH2} symbol="ETHEREUM" />
+          <TokenSymbolItem icon={TITAN} symbol="TITAN" />
         </DashContainer>
       </Wrap>
     </Box>

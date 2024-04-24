@@ -7,9 +7,10 @@ const StartButtonGroup = () => {
         GET STARTED
       </Text>
 
-      <Flex flexDir={{base:"column", sm:"row"}} justify={"center"} mt={"38px"} gap={"30px"}>
+      <Flex flexDir={{base:"column", sm:"row"}} justify={"center"} mt={"38px"} columnGap={"30px"} rowGap={"16px"}>
         <Button
-          h={12}
+          w={{base: "full", md: "172px"}}
+          h={"45px"}
           colorScheme="blue" 
           bg={"#007AFF"}
           px={8}
@@ -21,7 +22,8 @@ const StartButtonGroup = () => {
         </Button>
 
         <Button
-          h={12}
+          w={{base: "full", md: "163px"}}
+          h={"45px"}
           colorScheme="blackAlpha"
           bg={"transparent"}
           px={8}
@@ -32,7 +34,7 @@ const StartButtonGroup = () => {
           color={"white"}
           onClick={() => window.open("https://docs.tokamak.network/", '_blank')}
         >
-          User Guides
+          User Guide
         </Button>
       </Flex>
     </Box>
