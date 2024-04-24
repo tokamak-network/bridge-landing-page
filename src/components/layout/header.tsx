@@ -42,7 +42,7 @@ const Header = () => {
 
       <Button
         w={"148px"}
-        onClick={() => window.open("https://bridge.tokamak.network", "_blank")}
+        onClick={() => window.open("https://app.bridge.tokamak.network", "_blank")}
         h={"45px"}
         fontFamily={"Poppins"}
         colorScheme="blue"
