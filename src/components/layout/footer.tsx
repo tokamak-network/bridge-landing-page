@@ -101,7 +101,7 @@ const Footer = () => {
         },
         {
           text: "Documentation",
-          Link: "https://docs.tokamak.network/",
+          Link: "https://docs.tokamak.network/home/service-guide/tokamak-bridge",
         },
       ],
     },

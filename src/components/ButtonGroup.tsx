@@ -29,7 +29,7 @@ const ButtonGroup = () => {
           fontWeight={500}
           fontSize={18}
           color={"white"}
-          onClick={() => window.open("https://tokamaknetwork.gitbook.io/home/02-service-guide/tokamak-bridge", '_blank')}
+          onClick={() => window.open("https://docs.tokamak.network/home/service-guide/tokamak-bridge", '_blank')}
         >
           User Guide
         </Button>
