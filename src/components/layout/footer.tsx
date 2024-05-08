@@ -29,7 +29,7 @@ const Footer = () => {
         },
         {
           text: "Careers",
-          Link: "https://medium.com/onther-tech/onther-looking-to-recruit-blockchain-contributor-984ea4368824",
+          Link: "https://tokamak.notion.site/Tokamak-Network-Onboarding-523bc627bd374326b5dfbec3d3b0a8e1?pvs=74",
         },
         {
           text: "Partners",
@@ -169,7 +169,7 @@ const Footer = () => {
           flexDir={"row"}
           flexWrap={"wrap"}
           justifyContent={"space-between"}
-          height={{base: "540px", sm:"179px"}}
+          height={{ base: "540px", sm: "179px" }}
           mb={["30px", "30px", "60px", "60px"]}
           pr={["20px", "30px", "0px", "0px"]}
           pl={["40px", "40px", "30px", "0px"]}
@@ -294,6 +294,6 @@ const Footer = () => {
       <FooterBottom />
     </Flex>
   );
-}
+};
 
 export default Footer;
