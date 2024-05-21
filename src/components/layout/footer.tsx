@@ -110,7 +110,7 @@ const Footer = () => {
       subTitles: [
         {
           text: "Medium",
-          Link: "https://medium.com/onther-tech",
+          Link: "https://medium.com/tokamak-network",
         },
         {
           text: "X",
