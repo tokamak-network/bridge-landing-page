@@ -21,10 +21,7 @@ interface TokenProps {
   symbol: string;
 }
 
-const TokenSymbolItem = ({
-  icon,
-  symbol
-}: TokenProps) => {
+const TokenSymbolItem = ({ icon, symbol }: TokenProps) => {
   const theme = useTheme();
   return (
     <Flex flexDir={"column"} align={"center"} rowGap={"14px"}>
@@ -33,8 +30,8 @@ const TokenSymbolItem = ({
         {symbol}
       </Text>
     </Flex>
-  )
-}
+  );
+};
 
 const FeturedTokens = () => {
   const { mobileView } = useMediaView();
@@ -56,35 +53,19 @@ const FeturedTokens = () => {
       </Text>
 
       <Wrap mt={20} spacing={10} justify={"center"}>
-        <DashContainer title="Tokamak Network Ecosystem">
+        <DashContainer title="Tokamak Network Ecosystem" columnGap="106px">
           <TokenSymbolItem icon={ETH} symbol="ETH" />
           <TokenSymbolItem icon={WETH} symbol="WETH" />
           <TokenSymbolItem icon={TON} symbol="TON" />
           <TokenSymbolItem icon={WTON} symbol="WTON" />
         </DashContainer>
-
-        {!mobileView && (
-          <DashContainer title="Stable Assets">
-            <TokenSymbolItem icon={USDC} symbol="USDC" />
-            <TokenSymbolItem icon={USDT} symbol="USDT" />
-          </DashContainer>
-        )}
       </Wrap>
 
       <Wrap mt={20} spacing={10} justify={"center"}>
-        <DashContainer title="TONStarter Ecosystem">
-          <TokenSymbolItem icon={TOS} symbol="TOS" />
-          <TokenSymbolItem icon={DOC} symbol="DOC" />
-          <TokenSymbolItem icon={AURA} symbol="AURA" />
-          <TokenSymbolItem icon={LYDA} symbol="LYDA" />
+        <DashContainer title="Stable Assets">
+          <TokenSymbolItem icon={USDC} symbol="USDC" />
+          <TokenSymbolItem icon={USDT} symbol="USDT" />
         </DashContainer>
-
-        {mobileView && (
-          <DashContainer title="Stable Assets">
-            <TokenSymbolItem icon={USDC} symbol="USDC" />
-            <TokenSymbolItem icon={USDT} symbol="USDT" />
-          </DashContainer>
-        )}
 
         <DashContainer
           title="Supported Networks"

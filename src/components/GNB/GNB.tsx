@@ -69,11 +69,11 @@ function GNB() {
         w={"68px"}
         url={"https://dao.tokamak.network/#/"}
       ></Menu>
-      <Menu
+      {/* <Menu
         title={"Launchpad"}
         w={"110px"}
         url={"https://tonstarter.tokamak.network/"}
-      ></Menu>
+      ></Menu> */}
     </Flex>
   );
 }
