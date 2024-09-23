@@ -61,7 +61,7 @@ const FeturedTokens = () => {
         </DashContainer>
       </Wrap>
 
-      <Wrap mt={{base: 10, sm: 20}} spacing={10} justify={"center"}>
+      <Wrap mt={{ base: 10, sm: 20 }} spacing={10} justify={"center"}>
         <DashContainer title="Stable Assets">
           <TokenSymbolItem icon={USDC} symbol="USDC" />
           <TokenSymbolItem icon={USDT} symbol="USDT" />
