@@ -3,7 +3,7 @@ import { BigNumber, ethers } from "ethers";
 import BalanceChecker from "@/abis/BalanceChecker.json";
 import { useCallback, useEffect, useState } from "react";
 import { supportedTokens } from "@/types/token/supportedToken";
-import { fetchMarketPrice } from "@/utils/price/fetchMarketPrice";
+import { fetchTokenPrice } from "@/utils/price/fetchMarketPrice";
 import { BalanceCheckerContract, BridgeContract } from "@/constant";
 
 const getList = async (queryParam: string | undefined | null) => {
@@ -125,7 +125,6 @@ export function useFetchBalance() {
         const tokensWithBalances = formattedBalances.filter(
           (token: any) => token.balance > 0
         );
-
         //get the matching id from coingecko v3 token list using the token name and manually add some tokens
         const tokensWithId = tokensWithBalances.map((token: any) => {
          
@@ -145,12 +144,13 @@ export function useFetchBalance() {
           };
         });
 
+        const filteredTokensWithId = tokensWithId.filter((item: any) => item.symbol !== "TOS");
+
         //call the fetchMarketPrice function for all the tokens in the tokensWithId array
         const marketPricedList = await Promise.all(
-          tokensWithId.map(async (token: any) => {
-            const marketprice = await fetchMarketPrice(token.id);
+          filteredTokensWithId.map(async (token: any) => {
+            const marketprice = await fetchTokenPrice(token.symbol);
             const balanceInUSD = token.balance * marketprice;
-
             return {
               ...token,
               balanceInUSD: balanceInUSD,
