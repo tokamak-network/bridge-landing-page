@@ -3,7 +3,7 @@ import { BigNumber, ethers } from "ethers";
 import BalanceChecker from "@/abis/BalanceChecker.json";
 import { useCallback, useEffect, useState } from "react";
 import { supportedTokens } from "@/types/token/supportedToken";
-import { fetchTokenPrice } from "@/utils/price/fetchMarketPrice";
+import { fetchMarketPrice } from "@/utils/price/fetchMarketPrice";
 import { BalanceCheckerContract, BridgeContract } from "@/constant";
 
 const getList = async (queryParam: string | undefined | null) => {
@@ -149,7 +149,7 @@ export function useFetchBalance() {
         //call the fetchMarketPrice function for all the tokens in the tokensWithId array
         const marketPricedList = await Promise.all(
           filteredTokensWithId.map(async (token: any) => {
-            const marketprice = await fetchTokenPrice(token.symbol);
+            const marketprice = await fetchMarketPrice(token.id);
             const balanceInUSD = token.balance * marketprice;
             return {
               ...token,
