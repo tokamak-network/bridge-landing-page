@@ -19,10 +19,13 @@ export const fetchTokenPrice = async (tokenSymbol: string) => {
     return 1;
   }
 
-  const BTC_URL = `https://api.upbit.com/v1/ticker?markets=USDT-BTC`;
-  const res = await fetch(BTC_URL);
-  const BTC_data = await res.json();
-  const btc_price = BTC_data[0].trade_price;
+  let btc_price = 0;
+  if (tokenSymbol === "TON") {
+    const BTC_URL = `https://api.upbit.com/v1/ticker?markets=USDT-BTC`;
+    const res = await fetch(BTC_URL);
+    const BTC_data = await res.json();
+    btc_price = BTC_data[0].trade_price;
+  }
 
   const API_URL = tokenSymbol === "TON" ? `https://api.upbit.com/v1/ticker?markets=BTC-${tokenSymbol}` : `https://api.upbit.com/v1/ticker?markets=USDT-${tokenSymbol}`;
   const response = await fetch(API_URL);
