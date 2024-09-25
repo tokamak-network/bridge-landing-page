@@ -6,7 +6,7 @@ export async function fetchMarketPrice(tokenId: string) {
       throw new Error("Failed to fetch the market price");
     }
     const data = await response.json();
-    return data;
+    return data[0];
   } catch (error) {
   }
 }

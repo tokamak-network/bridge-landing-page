@@ -54,7 +54,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
 try {
     const isEcosystemToken = isTokamakEcosystemTokenName(tokenName);
-    const response = await fetch(`https://pro-api.coingecko.com/api/v3/coins/markets?ids=${tokenName}&vs_currency=usd&x_cg_pro_api_key=${process.env.NEXT_PUBLIC_COINGECKO_API_KEY}`);
+    const response = await fetch(`https://pro-api.coingecko.com/api/v3/coins/markets?ids=${tokenName}&vs_currency=usd&x_cg_pro_api_key=${process.env.COINGECKO_API_KEY}`);
     const data = await response.json();
 
     return res.status(200).json(
