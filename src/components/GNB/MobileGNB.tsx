@@ -21,7 +21,7 @@ function MobileTokamakGNB() {
       isFoucsed: false,
     },
     {
-      title: "L2 On-demand",
+      title: "L2 On-Demand",
       url: "https://rolluphub.tokamak.network/#/",
       isFoucsed: false,
     },

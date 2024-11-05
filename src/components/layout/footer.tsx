@@ -82,11 +82,11 @@ const Footer = () => {
           Link: "https://x.com/tokamak_network",
         },
         {
-          text: "Discord (EN)",
+          text: "Discord",
           Link: "https://discord.com/invite/J4chV2zuAK",
         },
         {
-          text: "Telegram",
+          text: "Telegram (EN)",
           Link: "https://t.me/tokamak_network",
         },
         {
