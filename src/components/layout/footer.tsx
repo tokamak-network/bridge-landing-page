@@ -28,75 +28,40 @@ const Footer = () => {
           Link: "https://tokamak.network/about",
         },
         {
-          text: "Careers",
+          text: "Onboarding",
           Link: "https://tokamak.notion.site/Tokamak-Network-Onboarding-523bc627bd374326b5dfbec3d3b0a8e1?pvs=74",
         },
         {
-          text: "Partners",
+          text: "Partners & Grant",
           Link: "https://tokamak.network/#partners",
         },
       ],
     },
     {
-      title: "Mainnet",
+      title: "L2 Mainnet",
       subTitles: [
         {
           text: "Titan",
           Link: "http://titan.tokamak.network/",
         },
-      ],
-    },
-    {
-      title: "L2 On-Demand",
-      subTitles: [
         {
-          text: "TokamakOPTIMISM",
-          Link: "https://tokamak.network/#layer2",
-        },
-        {
-          text: "TokamakzkEVM",
-          Link: "https://tokamak.network/#layer2",
+          text: "└ Explorer / Bridge",
+          Link: {
+            explorer: "https://explorer.titan.tokamak.network/",
+            bridge: "https://bridge.tokamak.network/",
+          },
         },
       ],
     },
     {
-      title: "Ecosystem",
-      subTitles: [
-        {
-          text: "Bridge & Swap",
-          Link: "https://bridge.tokamak.network",
-        },
-        {
-          text: "Staking",
-          Link: "https://simple.staking.tokamak.network/staking",
-        },
-        {
-          text: "DAO",
-          Link: "https://dao.tokamak.network/#/",
-        },
-        // {
-        //   text: "Launchpad",
-        //   Link: "https://tonstarter.tokamak.network/",
-        // },
-        {
-          text: "Price Dashboard",
-          Link: "https://price.tokamak.network/#/",
-        },
-        {
-          text: "Block Explorer",
-          Link: "https://explorer.titan.tokamak.network",
-        },
-      ],
-    },
-    {
-      title: "Developers",
+      title: "Developer",
       subTitles: [
         {
           text: "Grant",
           Link: "https://tokamak.notion.site/Tokamak-Network-Grant-Program-f2384b458ea341a0987c7e73a909aa21",
         },
         {
-          text: "Github",
+          text: "GitHub",
           Link: "https://github.com/tokamak-network",
         },
         {
@@ -113,13 +78,9 @@ const Footer = () => {
           Link: "https://medium.com/tokamak-network",
         },
         {
-          text: "X",
+          text: "X (Twitter)",
           Link: "https://x.com/tokamak_network",
         },
-        // {
-        //   text: "KakaoTalk (KR)",
-        //   Link: "https://open.kakao.com/o/g2zlglHd",
-        // },
         {
           text: "Discord",
           Link: "https://discord.com/invite/J4chV2zuAK",
@@ -193,7 +154,39 @@ const Footer = () => {
                   {info.title}
                 </Flex>
                 {info.subTitles.map((sub: any, index: number) => {
-                  return (
+                  return sub.text === "└ Explorer / Bridge" ? (
+                    <Flex
+                      key={index}
+                      flexDir="row"
+                      alignItems={"center"}
+                      gap={"3px"}
+                    >
+                      <Link
+                        href={sub.Link.explorer}
+                        isExternal
+                        style={{ textDecoration: "none" }}
+                        fontFamily={"Open Sans, sans-serif"}
+                        color={"#FFFFFF7F"}
+                        fontWeight={600}
+                        fontSize={"14px"}
+                        mb="4px"
+                      >
+                        <Text>└ Explorer /</Text>
+                      </Link>
+                      <Link
+                        href={sub.Link.bridge}
+                        isExternal
+                        style={{ textDecoration: "none" }}
+                        fontFamily={"Open Sans, sans-serif"}
+                        color={"#FFFFFF7F"}
+                        fontWeight={600}
+                        fontSize={"14px"}
+                        mb="4px"
+                      >
+                        <Text>{" Bridge"}</Text>
+                      </Link>
+                    </Flex>
+                  ) : (
                     <Link
                       href={sub.Link}
                       isExternal

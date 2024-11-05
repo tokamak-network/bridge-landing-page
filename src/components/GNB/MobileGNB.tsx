@@ -21,6 +21,11 @@ function MobileTokamakGNB() {
       isFoucsed: false,
     },
     {
+      title: "L2 On-Demand",
+      url: "https://rolluphub.tokamak.network/#/",
+      isFoucsed: false,
+    },
+    {
       title: "Bridge & Swap",
       url: "https://bridge.tokamak.network/#/",
       isFoucsed: true,
@@ -35,11 +40,6 @@ function MobileTokamakGNB() {
       url: "https://dao.tokamak.network//",
       isFoucsed: false,
     },
-    // {
-    //   title: "Launchpad",
-    //   url: "https://tonstarter.tokamak.network/",
-    //   isFoucsed: false,
-    // },
   ];
 
   let currentPosition = 1;
@@ -224,6 +224,8 @@ function MobileTokamakGNB() {
                   ? "100px"
                   : menu.title === "Bridge & Swap"
                   ? "136px"
+                  : menu.title === "L2 On-demand"
+                  ? "140px"
                   : "",
 
               fontWeight: menu.isFoucsed ? 600 : "",
