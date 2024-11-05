@@ -35,6 +35,11 @@ function MobileTokamakGNB() {
       url: "https://dao.tokamak.network//",
       isFoucsed: false,
     },
+    {
+      title: "L2 On-demand",
+      url: "https://rolluphub.tokamak.network/#/",
+      isFoucsed: false,
+    },
     // {
     //   title: "Launchpad",
     //   url: "https://tonstarter.tokamak.network/",
@@ -224,6 +229,8 @@ function MobileTokamakGNB() {
                   ? "100px"
                   : menu.title === "Bridge & Swap"
                   ? "136px"
+                  : menu.title === "L2 On-demand"
+                  ? "140px"
                   : "",
 
               fontWeight: menu.isFoucsed ? 600 : "",
